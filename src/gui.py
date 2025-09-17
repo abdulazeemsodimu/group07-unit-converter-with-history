@@ -5,7 +5,7 @@ from src.history import add_record, load_history, clear_history
 
 
 class UnitConverterApp:
-    def _init_(self, root):
+    def __init__(self, root):
         self.root = root
         self.root.title("Unit Converter")
         self.root.geometry("500x450")
