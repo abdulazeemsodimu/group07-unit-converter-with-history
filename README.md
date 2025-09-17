@@ -1,36 +1,56 @@
-# Unit Converter Project
+# Unit Converter with GUI & History
 
-## Overview
-This project is a Python Unit Converter with a Tkinter GUI.  
-It can convert between **Length, Mass, and Temperature** units.  
-The app also keeps a history of conversions using a JSON file.
+> A simple Python app to convert Length, Mass and Temperature units, with a Tkinter GUI and saved conversion history.
 
-## Setup
-On bash
+---
 
+## 📖 Overview
+This project provides a user-friendly **Tkinter GUI** to convert units of:
+- **Length**: m, km, cm, mm  
+- **Mass**: g, kg, mg  
+- **Temperature**: C, F, K  
+
+Conversions are saved to a JSON `history` file so users can review recent conversions. The repo also includes automated tests (pytest).
+
+## ✨ Features
+- Convert between length, mass and temperature units  
+- Tkinter GUI with input fields, category selector, and history panel  
+- Conversion history saved to `data/history.json`  
+- "Clear history" button in GUI  
+- Automated tests for converters and history functions  
+
+
+## 📁 Folder Structure
+
+
+## ⚙️ Requirements
+- Python **3.10+**
+- Tkinter (usually included with Python on macOS/Windows; on Linux you may need to install it)
+- pipenv (recommended) or a standard virtualenv
+
+
+## 🔧 Setup (pipenv — recommended)
+1. Install pipenv if needed:
+```bash
 pip install pipenv
 pipenv install pytest tk
 pipenv shell
 
-## Run the App
-On bash
+## Run the app
 pipenv run python src/gui.py
+# or if using venv:
+python src/gui.py
 
-## Run Tests
-On bash
-pytest tests/
 
-## Features
-* Convert between Length, Mass, and Temperature
-* Save conversion history into a JSON file
-* Display history in GUI
-* Clear history button
-* Automated tests with pytest
+## Run the tests
+pipenv run pytest tests/
 
-## Team Roles
-* Conversion Logic Team -> converters
-* History Team -> history
-* GUI Team -> gui
-* Testing Team -> tests
-* Media Team -> README and documentation
+
+#Features
+* Convert Length, Mass, and Temperature units
+* Easy-to-use Graphical User Interface (GUI) with Tkinter
+* Conversion History stored in history.json
+* History display in GUI with option to clear history
+* Automated tests for converters and history functions
+
 
